@@ -1,0 +1,45 @@
+body{
+    background:url("../resource/image/0000291224.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.title{
+
+    font-family: 华文琥珀;
+    font-size: 20px;
+}
+.cont{
+    margin-top: 50px;
+}
+
+
+#form1 {
+    width: 500px;
+    height: 265px;
+    padding-left: 50px;
+    padding-top: 50px;
+    position: absolute;
+    margin-left: -283px;
+    margin-top: -200px;
+    top: 50%;
+    left: 50%;
+    z-index: 2000;
+    border: #dca847 solid;
+    border-radius:200px;
+    background-color:rgba(255,255,255,0.5);
+}
+
+
+input {
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+#register {
+    width: 100px;
+    background-color:rgba(0,0,0,0.1);
+}

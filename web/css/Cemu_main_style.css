@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.nav_div{
+    background-color: black;
+
+    color: white;
+    height: 33px;
+    width: 100%;
+
+}
+
+.nav{
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+
+}
+#re_table{
+    text-align: center;
+}
+#ch_table{
+    color: #ea0000;
+    border-radius: 4px;
+    border: 0 ;
+    background-color: #ec9f03;
+    font-family: 华文新魏;
+    margin-left: 160px;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+.bor{
+    font-family: 华文琥珀;
+    margin-left: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#yh{
+    font-family: 华文琥珀;
+    color: white;
+    font-size: 25px;
+    float: left;
+}
+#gb{
+
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+
+}
+
+.nav :hover{
+    font-family: 华文琥珀;
+    float: right;
+    background-color: #bc0000;
+    background-position: center;
+    padding: 12px;
+
+    border-radius: 10px;
+    margin: 0;
+}
+
+
+.bo{
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+video {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;
+    muted :muted;
+    height: 100%;
+    width: 100%;
+
+    /*加滤镜*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter:grayscale(100%);*/
+
+}
+
+#im{
+    margin-top: 40px;
+    margin-left: 330px;
+}
+
+
+
+/*弹窗*/
+.black_overlay{
+
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=88);
+}
+.white_content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 55%;
+    height: 60%;
+    border: 10px solid #584b00;
+    border-radius:20px;
+    background-image: url("../resource/image/mmm.jpg");
+    background-position: center;
+    z-index:1002;
+    overflow: auto;
+}
+/*弹窗over*/
+
+.white_content_money {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 55%;
+    height: 60%;
+    border: 10px solid #584b00;
+    border-radius:20px;
+    background-image: url("../resource/image/mmm.jpg");
+    background-position: center;
+    z-index:1002;
+    overflow: auto;
+}
+
+#light_objdect{
+    color: white;
+    font-family: 华文新魏;
+    margin-left: 220px;
+    margin-top: 30px;
+}
+
+.left{
+    height: 30px;
+    float: right;
+    font-family: 黑体;
+    text-align: right;
+}
+.center{
+
+}
+
+
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #584b00;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #ae8f00;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    translation: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #584b00;
+    border-radius: 3px;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size:30px;
+    color: #ae8f00;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+#check:checked ~ section{
+    margin-left: 250px;
+}

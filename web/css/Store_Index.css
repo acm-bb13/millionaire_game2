@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border-spacing:0px;
+}
+.Backgroud-e{
+    width:100%;
+    height:100%;
+    /*position: absolute;*/
+    background: url("../resource/image/SotreBackground.jpg");
+    background-repeat: repeat;
+    background-size:contain;
+    text-align: center;
+}
+#HeadTitle_back{
+    /*background:url("../resource/image/HeadTitle.png") ;*/
+    width:200px;
+    height:80px;
+    position: absolute;
+    left:50%;
+    margin-left: -100px;
+
+    text-align: center;
+    background: url("../resource/image/Title.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+#HeadTitle_img{
+    float:none;
+
+}
+#HeadTitle_word{
+    float:none;
+    font-family: '锐字真言体免费商用';
+    position: absolute;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 65px;
+    margin-left:24px;
+    color:white;
+}
+
+.second{
+    margin-top:30px;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+}
+.Items{
+    text-align: center;
+    background-color: azure;
+    border: 16px solid #00b9b7;
+    border-radius:20px;
+}
+.Items td{
+    width: 33%;
+    height:462px;
+    /*background-color: #ae8f00;*/
+    vertical-align: top;
+    background-image: url("../resource/image/Border.png");
+    border: 16px solid #00b9b7;
+}
+.Items span{
+    font-size:30px;
+    font-weight:300;
+    font-family: '锐字真言体免费商用';
+    color:blue;
+}
+.Item{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+.Item span {
+    background: url("../resource/image/Border.png") no-repeat right bottom;
+    width:100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-family: '锐字真言体免费商用';
+}
+.Item img{
+    /*margin-bottom: 20%;*/
+    width:100%;
+    height:80%;
+    margin-TOP: 10%;
+    margin-bottom: 3%;
+    text-align: unset;
+    border: 4px solid #ffb9b7;
+    border-radius:20px;
+}
+.purchase img{
+    width:30%;
+    /*margin-left:35%;*/
+    margin-TOP: 2px;
+}
+
+button{
+    width: 140px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:1px 1px 1px #333;
+    border-radius: 5px;
+    margin:20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+button.red{
+    border:1px solid #b42323;
+    box-shadow: 0 1px 2px #e99494 inset,0 -1px 0 #954b4b inset,0 -2px 3px #e99494 inset;
+    background: -webkit-linear-gradient(top,#d53939,#b92929);
+    background: -moz-linear-gradient(top,#d53939,#b92929);
+    background: linear-gradient(top,#d53939,#b92929);
+}
+/*彈窗*/
+.black_overlay{
+
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=88);
+}
+.white_content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    width: 55%;
+    height: 60%;
+    border: 10px solid #584b00;
+    border-radius:20px;
+    /*background-image: url("../resource/image/mmm.jpg");*/
+    background-color: black;
+    background-position: center;
+    z-index:1002;
+    overflow: auto;
+}
+.nav_div{
+    background-color: black;
+
+    color: white;
+    height: 33px;
+    width: 100%;
+}
+.nav{
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+
+}
+.table.LastShop{
+    width:100%;
+    height:548px;
+    text-align: center;
+}
+.table.LastShop td{
+    width:50%;
+    vertical-align: top;
+}
+.image{
+    border: 20px solid black;
+    background-color: black;
+    border-spacing:0px;
+}
+.table.LastShop td{
+    color:white;
+}
+.table.LastShop td img{
+    width: 100%;
+    height: 520px;
+    border: 4px solid #ffcc00;
+    border-radius:20px;
+    margin-top: -25px;
+    /*margin-left:-4%*/
+}
+#shop-text{
+    text-align: left;
+    margin-top: 15px;
+    margin-left:10px;
+    height:430px;
+}
+#shop-text h1{
+    font-family: 锐字真言体免费商用;
+}
+#shop-buy{
+    text-align: center;
+    color:white;
+}
+
+

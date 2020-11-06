@@ -1,0 +1,32 @@
+
+*{margin: 0;}
+
+/*body{*/
+    /*background-image: url("../resource/Game_Background/Game_background_2.jpg") ;*/
+
+    /*background-repeat: no-repeat;*/
+
+/*}*/
+
+body{
+    background-image: url("../../resource/image/007.jpg") ;
+    background-size: cover;
+}
+.Message_content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border: 10px solid #584b00;
+    border-radius:20px;
+    z-index:1002;
+    overflow: auto;
+}
+#Message-Up{
+    font-family: 新宋体;
+    color: #bc0000;
+
+}
+/*弹窗over*/
+

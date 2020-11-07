@@ -153,7 +153,15 @@
 <%--氪金弹窗--%>
 <div id="money" class="white_content_money">
     <div class="nav_div">
-
+        <span>
+            <text>
+                该二维码为所有开发者的收款码，仅娱乐使用，请勿真的付款！
+                <br>
+                开发人员:杨吉翔-朱修远-刘增升-邹露阳-吴泽龙-尧政
+                <br>
+                网站建站人员:陈吉-朱林昊-刘增升
+            </text>
+        </span>
         <span   class="nav" >
             <a href = "javascript:void(0)" onclick = "document.getElementById('money').style.display='none';document.getElementById('im').style.display='none' ;document.getElementById('fade').style.display='none'" style="color: white">关闭</a>
         </span>

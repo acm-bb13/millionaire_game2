@@ -29,16 +29,17 @@ public class Register_Register_Servlet extends HttpServlet {
         String user_name=req.getParameter("user_name");
 
 //        用于检测数据是否成功读取，记得备注掉
+        System.out.println("--------------------------");
         System.out.println(user_login);
         System.out.println(user_name);
         System.out.println(user_password);
+        System.out.println("--------------------------");
 
 //        注册帐号
         RegisterDao.register_register(user_login,user_password,user_name);
 
         PrintWriter out = resp.getWriter();
         out.write("true");
-        System.out.println(" test1");
 //        重定向为啥没用了
 //        resp.sendRedirect("Register_login.jsp");
     }

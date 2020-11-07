@@ -33,17 +33,21 @@ public class Game_Play_Servlet extends HttpServlet {
         resp.setContentType("text/html;charset=UTF-8");
         //        获取请求，打包地址
         String request =req.getParameter("request");
-        System.out.println(request);
+
         Ajax_packAndSend.pack("servlet", req.getParameter("servlet"));
         Ajax_packAndSend.pack("request",request);
-        System.out.println("Game_Play_Servlet");
+
+        Timestamp dd = new Timestamp(System.currentTimeMillis());
+        System.out.println("=====================================");
+        System.out.println(dd.toString()+"<用户>:"+Register_Message_bean.getRegister_messageBean().getUser_name()+"请求游戏服务器中....");
+        System.out.println("=====================================");
+
 //        Character_Message_bean.index
         if("getTest".equals(request)){
             Character_Message_bean cmb= Character_Operate_Dao.getCharacter_Message_Index(
                     Character_Message_bean.index
             );
-            System.out.println("index:"+Character_Message_bean.index);
-            System.out.println("back_name:"+cmb.getName());
+
             Ajax_packAndSend.pack("back_name",cmb.getName());
         }
 

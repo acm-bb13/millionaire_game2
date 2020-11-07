@@ -31,6 +31,6 @@ public class Store_ConPage extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         PrintWriter out = resp.getWriter();
         out.print(JSONArray.toJSONString(pageIndex));
-        System.out.println(JSONArray.toJSONString(pageIndex));
+//        System.out.println(JSONArray.toJSONString(pageIndex));
     }
 }

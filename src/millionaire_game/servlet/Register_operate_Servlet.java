@@ -2,6 +2,7 @@ package millionaire_game.servlet;
 
 import com.alibaba.fastjson.JSONArray;
 import millionaire_game.dao.Character_Record_OP_Dao;
+import millionaire_game.javabean.Character_Message_bean;
 import millionaire_game.javabean.Character_Record_bean;
 import millionaire_game.javabean.Register_Message_bean;
 
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.List;
 
 @WebServlet("/Register_operate_Servlet")
@@ -45,6 +47,10 @@ public class Register_operate_Servlet extends HttpServlet {
 //                请求帐号是否为登录状态
 
             }else if("UpDate".equals(request)){
+                Timestamp dd = new Timestamp(System.currentTimeMillis());
+                System.out.println("=====================================");
+                System.out.println(dd.toString()+"<用户>:"+ Register_Message_bean.getRegister_messageBean().getUser_name()+"请求更改账户信息中....");
+                System.out.println("=====================================");
                 String  user_name=req.getParameter("user_name");
                 String pass_word =req.getParameter("pass_word");
                 String admin_password =req.getParameter("admin_password");
@@ -63,7 +69,6 @@ public class Register_operate_Servlet extends HttpServlet {
                     rmb.setUser_password(pass_word);
                 }
 
-                System.out.println("user_name:"+rmb.getUser_name());
 
                 Register_Message_bean.pushDate();
 
@@ -74,9 +79,8 @@ public class Register_operate_Servlet extends HttpServlet {
                 Ajax_packAndSend.pack("is_admin",rmb.isIs_admin());
             }else if("register_exit".equals(request)){
 //              请求账号登出
-                System.out.println("test-2");
                 Register_Message_bean.exit_login();
-                System.out.println("text-1");
+
             }
         }else {
             Ajax_packAndSend.pack("is_login","false");

@@ -16,7 +16,8 @@ public class Register_upadte_Dao {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             int i=1;
             preparedStatement.setString(i++, register_messageBean.getUser_name());
-            System.out.println(register_messageBean.getUser_name());
+
+
             preparedStatement.setString(i++, register_messageBean.getUser_password());
             preparedStatement.setInt(i++, register_messageBean.isIs_admin()?1:0);
             preparedStatement.setInt(i++, register_messageBean.getUser_gold());

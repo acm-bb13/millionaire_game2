@@ -30,7 +30,7 @@ public class Character_operate_Servlet extends HttpServlet {
 
 //        获取请求，打包地址
         String request =req.getParameter("request");
-        System.out.println(request);
+
         Ajax_packAndSend.pack("servlet", req.getParameter("servlet"));
 
         if("getCharacterMessage".equals(request)){
@@ -57,9 +57,9 @@ public class Character_operate_Servlet extends HttpServlet {
             Character_Operate_Dao.addDate(cmb);
             List<Character_Message_bean> cm = Character_Operate_Dao.getCharacter_Message(
                     Register_Message_bean.getRegister_messageBean().getUser_login());
-            for(int i=0; i<cm.size();i++){
-                System.out.println("id:"+cm.get(i).getId());
-            }
+//            for(int i=0; i<cm.size();i++){
+//                System.out.println("id:"+cm.get(i).getId());
+//            }
             Ajax_packAndSend.pack("List",JSONArray.toJSONString(cm));
 
         }else if("deleteMessage".equals(request)){

@@ -27,7 +27,7 @@ public class Store_ConShop extends HttpServlet {
         PrintWriter out = resp.getWriter();
 
         out.print(JSONArray.toJSONString(conList));
-        System.out.println(JSONArray.toJSONString(conList));
+
     }
 }
 

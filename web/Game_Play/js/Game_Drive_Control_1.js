@@ -1,6 +1,6 @@
 
 
-
+var Control_bl = true;
 //键盘控制
 document.onkeydown = function(e){
     // alert(e.keyCode);
@@ -54,14 +54,14 @@ document.onkeydown = function(e){
             // }else {
             //     alert("请等待你的回合");
             // }
-            packDate("request" , "Start_Luck");
-            send("Game_Play_Servlet");
             // heroObject.moveTick=parseInt(Math.random()*6+1);
             // numberAim = heroObject.moveTick;
-            numberTick = 500;
-
-
-
+            if(Control_bl){
+                packDate("request" , "Start_Luck");
+                send("Game_Play_Servlet");
+                numberTick = 500;
+                Control_bl = false;
+            }
             break;
         // case :
 

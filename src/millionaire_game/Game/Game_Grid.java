@@ -15,7 +15,7 @@ public class Game_Grid {
     public static String grids[]=new String[51];
     static {
         randomWeight.put( "Grid_Block", 1);
-        randomWeight.put("Grid_Circle",1);
+        randomWeight.put("Grid_Circle",2);
         randomWeight.put("Grid_Colour",1);
         randomWeight.put("Grid_Fork_Big",1);
         randomWeight.put("Grid_Down_Yellow",1);
@@ -24,7 +24,7 @@ public class Game_Grid {
     }
 
     public static void GridElement(String str){
-        System.out.println("element:"+str);
+
         Ajax_packAndSend.pack("respond",str);
         Character_Message_bean cmb=Character_Message_bean.getCM();
         if("Grid_Circle".equals(str)){

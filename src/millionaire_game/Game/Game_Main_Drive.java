@@ -36,9 +36,9 @@ public class Game_Main_Drive {
     }
 
     public static void main(String[] args) {
-        for (int i = 1;i<=50;i++){
-            System.out.println(i+":"+getLocation[i][0]+" "+getLocation[i][1]);
-        }
+//        for (int i = 1;i<=50;i++){
+//            System.out.println(i+":"+getLocation[i][0]+" "+getLocation[i][1]);
+//        }
     }
 
 }

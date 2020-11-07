@@ -3,6 +3,8 @@ package millionaire_game.javabean;
 import millionaire_game.dao.Login_Dao;
 import millionaire_game.dao.Register_upadte_Dao;
 
+import java.sql.Timestamp;
+
 //该类为单类，一次只能有一个帐号登录
 public class Register_Message_bean {
     static Register_Message_bean register_messageBean =null;
@@ -32,6 +34,10 @@ public class Register_Message_bean {
         this.user_gold = user_gold;
         this.experience = experience;
         this.user_password = user_password;
+        Timestamp d = new Timestamp(System.currentTimeMillis());
+        System.out.println("=====================================");
+        System.out.println(d.toString()+"<用户>:"+user_name+"已登录");
+        System.out.println("=====================================");
     }
 
     //    获取当前已登录的信息，如果未登录，则会返回null;
@@ -47,6 +53,7 @@ public class Register_Message_bean {
 //    注销登录信息
     public static void exit_login(){
         if(register_messageBean != null){
+
             register_messageBean = null;
         }
     }

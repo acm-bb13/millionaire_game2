@@ -217,6 +217,7 @@ function Ajax_Drive_Back() {
         HealthRefresh();
         $(heroObject.id).css("left" ,heroObject.x);
         $(heroObject.id).css("top" ,heroObject.y);
+        Control_bl = true;
     }
 
     if(("health"== backDateAjaxSearch("request")||"Gold"== backDateAjaxSearch("request"))

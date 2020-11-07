@@ -17,14 +17,14 @@ public class Ajax_template extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=UTF-8");
 
-        System.out.println("    ________测试 -----------------\n\n\n\n\n\n\n\n\n\n           ");
+
         String user_login = req.getParameter("user_login");
         String user_password=req.getParameter("user_password");
         String user_name=req.getParameter("user_name");
         Ajax_packAndSend.pack("user_name",user_name);
         Ajax_packAndSend.pack("user_login",user_login);
         Ajax_packAndSend.pack("user_password",user_password);
-        System.out.println(Ajax_packAndSend.str.toString());
+
         Ajax_packAndSend.send(resp);
     }
 

@@ -39,6 +39,5 @@ public class Store_ConList extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         PrintWriter out = resp.getWriter();
         out.print(JSONArray.toJSONString(conList));
-        System.out.println(JSONArray.toJSONString(conList));
     }
 }

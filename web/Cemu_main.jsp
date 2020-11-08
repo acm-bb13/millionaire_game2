@@ -156,10 +156,6 @@
         <span>
             <text>
                 该二维码为所有开发者的收款码，仅娱乐使用，请勿真的付款！
-                <br>
-                开发人员:杨吉翔-朱修远-刘增升-邹露阳-吴泽龙-尧政
-                <br>
-                网站建站人员:陈吉-朱林昊-刘增升
             </text>
         </span>
         <span   class="nav" >
@@ -364,7 +360,12 @@ var i = 1;
         document.getElementById("im").src= "resource/image/"+i+".jpg";
     }
 </script>
-
+<footer style="color:white;font-size:25px;float: right;">
+    <ul>
+        <li>开发人员:杨吉翔 朱修远 刘增升 邹露阳 吴泽龙 尧政</li>
+        <li>网站归属权:陈吉 朱林昊 刘增升</li>
+    </ul>
+</footer>
 
 </body>
 </html>

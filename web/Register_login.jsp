@@ -70,5 +70,11 @@
             backDateAjax="";
         }
     </script>
+    <footer style="color:white;font-size:25px;float: right;">
+        <ul>
+            <li>开发人员:杨吉翔 朱修远 刘增升 邹露阳 吴泽龙 尧政</li>
+            <li>网站归属权:陈吉 朱林昊 刘增升</li>
+        </ul>
+    </footer>
     </body>
 </html>

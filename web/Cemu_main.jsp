@@ -365,9 +365,11 @@ var i = 1;
 </body>
 <footer style="color:white;font-size:10px;float: right;left: 0%;position: relative;background-color: #000000;">
     <ul>
-        <li>开发人员:杨吉翔 朱修远 刘增升 邹露阳 吴泽龙 尧政</li>
-        <li>网站归属权:陈吉 朱林昊 刘增升</li>
+        <li>请使用电脑端登录</li>
+        <li>开发人员：杨吉翔 朱修远 刘增升 邹露阳 吴泽龙 尧政</li>
+        <li>网站归属权：陈吉 朱林昊 刘增升</li>
         © 2020-2021 bb13.xyz 版权所有 ICP证：<a href="http://beian.miit.gov.cn/" target="_blank">赣ICP备2020013200号-1</a>
+        <li>网站备案负责人：刘增升</li>
     </ul>
 </footer>
 </html>
